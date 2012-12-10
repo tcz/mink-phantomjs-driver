@@ -14,7 +14,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param Session $session
      */
-    function setSession(Session $session)
+    public function setSession(Session $session)
     {
         
     }
@@ -22,7 +22,7 @@ class PhantomDriver implements DriverInterface
     /**
      * Starts driver.
      */
-    function start()
+    public function start()
     {
         
     }
@@ -32,7 +32,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return Boolean
      */
-    function isStarted()
+    public function isStarted()
     {
         
     }
@@ -40,7 +40,7 @@ class PhantomDriver implements DriverInterface
     /**
      * Stops driver.
      */
-    function stop()
+    public function stop()
     {
         
     }
@@ -48,7 +48,7 @@ class PhantomDriver implements DriverInterface
     /**
      * Resets driver.
      */
-    function reset()
+    public function reset()
     {
         
     }
@@ -58,7 +58,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $url url of the page
      */
-    function visit($url)
+    public function visit($url)
     {
         
     }
@@ -68,7 +68,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return string
      */
-    function getCurrentUrl()
+    public function getCurrentUrl()
     {
         
     }
@@ -76,7 +76,7 @@ class PhantomDriver implements DriverInterface
     /**
      * Reloads current page.
      */
-    function reload()
+    public function reload()
     {
         
     }
@@ -84,7 +84,7 @@ class PhantomDriver implements DriverInterface
     /**
      * Moves browser forward 1 page.
      */
-    function forward()
+    public function forward()
     {
         
     }
@@ -92,7 +92,7 @@ class PhantomDriver implements DriverInterface
     /**
      * Moves browser backward 1 page.
      */
-    function back()
+    public function back()
     {
         
     }
@@ -103,7 +103,7 @@ class PhantomDriver implements DriverInterface
      * @param string|Boolean $user     user name or false to disable authentication
      * @param string         $password password
      */
-    function setBasicAuth($user, $password)
+    public function setBasicAuth($user, $password)
     {
 
     }
@@ -113,7 +113,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $name window name (null for switching back to main window)
      */
-    function switchToWindow($name = null)
+    public function switchToWindow($name = null)
     {
         
     }
@@ -123,7 +123,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $name iframe name (null for switching back)
      */
-    function switchToIFrame($name = null)
+    public function switchToIFrame($name = null)
     {
         
     }
@@ -134,7 +134,7 @@ class PhantomDriver implements DriverInterface
      * @param string $name
      * @param string $value
      */
-    function setRequestHeader($name, $value)
+    public function setRequestHeader($name, $value)
     {
         
     }
@@ -144,7 +144,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return array
      */
-    function getResponseHeaders()
+    public function getResponseHeaders()
     {
         
     }
@@ -155,7 +155,7 @@ class PhantomDriver implements DriverInterface
      * @param string $name
      * @param string $value
      */
-    function setCookie($name, $value = null)
+    public function setCookie($name, $value = null)
     {
         
     }
@@ -167,7 +167,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return string|null
      */
-    function getCookie($name)
+    public function getCookie($name)
     {
         
     }
@@ -177,7 +177,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return integer
      */
-    function getStatusCode()
+    public function getStatusCode()
     {
         
     }
@@ -187,7 +187,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return string
      */
-    function getContent()
+    public function getContent()
     {
         
     }
@@ -199,7 +199,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return array array of NodeElements
      */
-    function find($xpath)
+    public function find($xpath)
     {
         
     }
@@ -211,7 +211,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return string
      */
-    function getTagName($xpath)
+    public function getTagName($xpath)
     {
         
     }
@@ -223,7 +223,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return string
      */
-    function getText($xpath)
+    public function getText($xpath)
     {
         
     }
@@ -235,7 +235,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return string
      */
-    function getHtml($xpath)
+    public function getHtml($xpath)
     {
         
     }
@@ -248,7 +248,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return mixed
      */
-    function getAttribute($xpath, $name)
+    public function getAttribute($xpath, $name)
     {
         
     }
@@ -260,7 +260,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return mixed
      */
-    function getValue($xpath)
+    public function getValue($xpath)
     {
         
     }
@@ -271,7 +271,7 @@ class PhantomDriver implements DriverInterface
      * @param string $xpath
      * @param string $value
      */
-    function setValue($xpath, $value)
+    public function setValue($xpath, $value)
     {
         
     }
@@ -281,7 +281,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function check($xpath)
+    public function check($xpath)
     {
         
     }
@@ -291,7 +291,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function uncheck($xpath)
+    public function uncheck($xpath)
     {
         
     }
@@ -303,7 +303,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return Boolean
      */
-    function isChecked($xpath)
+    public function isChecked($xpath)
     {
         
     }
@@ -315,7 +315,7 @@ class PhantomDriver implements DriverInterface
      * @param string  $value
      * @param Boolean $multiple
      */
-    function selectOption($xpath, $value, $multiple = false)
+    public function selectOption($xpath, $value, $multiple = false)
     {
         
     }
@@ -325,7 +325,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function click($xpath)
+    public function click($xpath)
     {
         
     }
@@ -335,7 +335,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function doubleClick($xpath)
+    public function doubleClick($xpath)
     {
         
     }
@@ -345,7 +345,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function rightClick($xpath)
+    public function rightClick($xpath)
     {
         
     }
@@ -356,7 +356,7 @@ class PhantomDriver implements DriverInterface
      * @param string $xpath
      * @param string $path
      */
-    function attachFile($xpath, $path)
+    public function attachFile($xpath, $path)
     {
         
     }
@@ -368,7 +368,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return Boolean
      */
-    function isVisible($xpath)
+    public function isVisible($xpath)
     {
         
     }
@@ -378,7 +378,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function mouseOver($xpath)
+    public function mouseOver($xpath)
     {
         
     }
@@ -388,7 +388,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function focus($xpath)
+    public function focus($xpath)
     {
         
     }
@@ -398,7 +398,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $xpath
      */
-    function blur($xpath)
+    public function blur($xpath)
     {
         
     }
@@ -410,7 +410,7 @@ class PhantomDriver implements DriverInterface
      * @param mixed  $char     could be either char ('b') or char-code (98)
      * @param string $modifier keyboard modifier (could be 'ctrl', 'alt', 'shift' or 'meta')
      */
-    function keyPress($xpath, $char, $modifier = null)
+    public function keyPress($xpath, $char, $modifier = null)
     {
         
     }
@@ -422,7 +422,7 @@ class PhantomDriver implements DriverInterface
      * @param mixed  $char     could be either char ('b') or char-code (98)
      * @param string $modifier keyboard modifier (could be 'ctrl', 'alt', 'shift' or 'meta')
      */
-    function keyDown($xpath, $char, $modifier = null)
+    public function keyDown($xpath, $char, $modifier = null)
     {
         
     }
@@ -434,7 +434,7 @@ class PhantomDriver implements DriverInterface
      * @param mixed  $char     could be either char ('b') or char-code (98)
      * @param string $modifier keyboard modifier (could be 'ctrl', 'alt', 'shift' or 'meta')
      */
-    function keyUp($xpath, $char, $modifier = null)
+    public function keyUp($xpath, $char, $modifier = null)
     {
         
     }
@@ -445,7 +445,7 @@ class PhantomDriver implements DriverInterface
      * @param string $sourceXpath
      * @param string $destinationXpath
      */
-    function dragTo($sourceXpath, $destinationXpath)
+    public function dragTo($sourceXpath, $destinationXpath)
     {
         
     }
@@ -455,7 +455,7 @@ class PhantomDriver implements DriverInterface
      *
      * @param string $script
      */
-    function executeScript($script)
+    public function executeScript($script)
     {
         
     }
@@ -467,7 +467,7 @@ class PhantomDriver implements DriverInterface
      *
      * @return mixed
      */
-    function evaluateScript($script)
+    public function evaluateScript($script)
     {
         
     }
@@ -478,9 +478,8 @@ class PhantomDriver implements DriverInterface
      * @param integer $time      time in milliseconds
      * @param string  $condition JS condition
      */
-    function wait($time, $condition)
+    public function wait($time, $condition)
     {
         
     }
 }
-
